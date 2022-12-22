@@ -1,0 +1,54 @@
+esphome:
+  name: esphome-usbswitchcontroller
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "SomeRandomKey"
+
+ota:
+  password: "password"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+captive_portal:
+    
+
+switch:
+  - platform: gpio
+    pin: 5
+    id: relay1 # ESP D1 / USB1
+    name: usb1
+    on_turn_on:
+    - delay: 50ms
+    - switch.turn_off: relay1
+  - platform: gpio
+    pin: 4
+    id: relay2 # ESP D2 / USB2
+    name: usb2
+    on_turn_on:
+    - delay: 50ms
+    - switch.turn_off: relay2
+  - platform: gpio
+    pin: 14
+    id: relay3 # ESP D5 / USB3
+    name: usb3
+    on_turn_on:
+    - delay: 50ms
+    - switch.turn_off: relay3
+  - platform: gpio
+    pin: 12
+    id: relay4 # ESP D6 / USB4
+    name: usb4
+    on_turn_on:
+    - delay: 50ms
+    - switch.turn_off: relay4
+    

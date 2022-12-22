@@ -1,0 +1,76 @@
+esphome:
+  name: esphome-fullycontroller
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "SomeRandomKey"
+
+ota:
+  password: "password"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+captive_portal:
+    
+
+output:
+  - platform: gpio
+    pin: 14
+    id: relay2 # HS2 / RJ45 Pin 6 / ESP D5
+    inverted: true
+  - platform: gpio
+    pin: 12
+    id: relay1 # HS1 / RJ45 Pin 7 / ESP D6
+    inverted: true
+  - platform: gpio
+    pin: 13
+    id: relay0 # HS0 / RJ45 Pin 8 / ESP D7
+    inverted: true
+switch:
+  - platform: template
+    id: deskm1
+    name: "Desk M1"
+    turn_on_action:
+      - output.turn_on: relay0
+      - output.turn_on: relay1
+      - delay: 50ms
+      - output.turn_off: relay0
+      - output.turn_off: relay1
+      - switch.turn_off: deskm1
+  - platform: template
+    id: deskm2
+    name: "Desk M2"
+    turn_on_action:
+      - output.turn_on: relay2
+      - delay: 50ms
+      - output.turn_off: relay2
+      - switch.turn_off: deskm2
+  - platform: template
+    id: deskm3
+    name: "Desk M3"
+    turn_on_action:
+      - output.turn_on: relay0
+      - output.turn_on: relay2
+      - delay: 50ms
+      - output.turn_off: relay0
+      - output.turn_off: relay2
+      - switch.turn_off: deskm3
+  - platform: template
+    id: deskm4
+    name: "Desk M4"
+    turn_on_action:
+      - output.turn_on: relay1
+      - output.turn_on: relay2
+      - delay: 50ms
+      - output.turn_off: relay1
+      - output.turn_off: relay2
+      - switch.turn_off: deskm4
