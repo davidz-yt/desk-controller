@@ -1,0 +1,316 @@
+{
+    "version": 3,
+    "unmapped_passthrough": false,
+    "partial_scroll_timeout": 1000000,
+    "interval_override": 0,
+    "mappings": [
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x00070062",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070068",
+            "source_usage": "0x00070062",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x00070063",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070069",
+            "source_usage": "0x00070063",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x00070058",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006a",
+            "source_usage": "0x00070058",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e0",
+            "source_usage": "0x00070059",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00000000",
+            "source_usage": "0x00070059",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x0007005a",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006c",
+            "source_usage": "0x0007005a",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x0007005b",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006d",
+            "source_usage": "0x0007005b",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x0007005c",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006e",
+            "source_usage": "0x0007005c",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x0007005d",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006f",
+            "source_usage": "0x0007005d",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x0007005e",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070070",
+            "source_usage": "0x0007005e",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x00070057",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070071",
+            "source_usage": "0x00070057",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x0007005f",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070072",
+            "source_usage": "0x0007005f",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e1",
+            "source_usage": "0x00070060",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070073",
+            "source_usage": "0x00070060",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x00070061",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070068",
+            "source_usage": "0x00070061",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x00070056",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070069",
+            "source_usage": "0x00070056",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x00070053",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006a",
+            "source_usage": "0x00070053",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x00070054",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006b",
+            "source_usage": "0x00070054",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x00070055",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006c",
+            "source_usage": "0x00070055",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x0007002a",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006d",
+            "source_usage": "0x0007002a",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x00070029",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006e",
+            "source_usage": "0x00070029",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x000c0192",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007006f",
+            "source_usage": "0x000c0192",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x0007002b",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070070",
+            "source_usage": "0x0007002b",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x0007002e",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070071",
+            "source_usage": "0x0007002e",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        }
+    ]
+}
