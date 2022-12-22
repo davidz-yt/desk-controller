@@ -1,0 +1,1 @@
+YAML for ESPHome devices
