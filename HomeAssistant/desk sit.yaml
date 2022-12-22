@@ -1,0 +1,8 @@
+alias: Desk Sit
+sequence:
+  - type: turn_on
+    device_id: 8a557bd2cb05676e8ea23a9675a69e86
+    entity_id: switch.desk_m2_2
+    domain: switch
+mode: restart
+icon: mdi:desk

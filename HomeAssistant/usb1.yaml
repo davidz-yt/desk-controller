@@ -1,0 +1,7 @@
+alias: USB1
+sequence:
+  - type: turn_on
+    device_id: 3f5a4d49ea56c4c451ccd74f4d91612d
+    entity_id: switch.usb1
+    domain: switch
+mode: single

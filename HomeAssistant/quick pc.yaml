@@ -1,0 +1,30 @@
+alias: Quick PC
+sequence:
+  - if:
+      - condition: state
+        entity_id: media_player.lg_webos_smart_tv
+        state: "off"
+    then:
+      - service: script.lg_wake_on_lan
+        data: {}
+      - wait_for_trigger:
+          - platform: device
+            device_id: 75daef7e6cd929bf80dd9604b4d3ffc6
+            domain: media_player
+            entity_id: media_player.lg_webos_smart_tv
+            type: turned_on
+        timeout:
+          hours: 0
+          minutes: 0
+          seconds: 10
+          milliseconds: 0
+    else: []
+  - service: media_player.select_source
+    data:
+      source: PC
+    target:
+      entity_id: media_player.lg_webos_smart_tv
+  - service: script.usb1
+    data: {}
+mode: single
+icon: mdi:desktop-classic

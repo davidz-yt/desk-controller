@@ -1,0 +1,32 @@
+alias: Toggle Power LGTV
+sequence:
+  - if:
+      - condition: state
+        entity_id: media_player.lg_webos_smart_tv
+        state: "off"
+    then:
+      - service: script.lg_wake_on_lan
+        data: {}
+    else:
+      - if:
+          - condition: state
+            entity_id: switch.sonoff_1001682c45_1
+            state: "on"
+        then:
+          - type: turn_off
+            device_id: a57e83be1268f87bb41e8a899ad59872
+            entity_id: switch.sonoff_1001682c45_1
+            domain: switch
+      - if:
+          - condition: state
+            entity_id: light.bulb_9
+            state: "on"
+        then:
+          - service: script.monitor_light_toggle
+            data: {}
+      - service: webostv.command
+        data:
+          entity_id: media_player.lg_webos_smart_tv
+          command: system/turnOff
+mode: single
+icon: mdi:power

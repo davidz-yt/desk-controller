@@ -1,0 +1,8 @@
+alias: LG Wake On Lan
+sequence:
+  - service: wake_on_lan.send_magic_packet
+    data:
+      mac: 4C:4C:4C:4C:4C:4C
+      broadcast_address: 192.168.1.50
+mode: single
+icon: mdi:power
