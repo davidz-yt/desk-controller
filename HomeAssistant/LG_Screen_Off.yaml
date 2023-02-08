@@ -1,0 +1,8 @@
+alias: LG Screen Off
+sequence:
+  - service: webostv.command
+    data:
+      entity_id: media_player.lg_webos_smart_tv
+      command: com.webos.service.tvpower/power/turnOffScreen
+mode: single
+icon: mdi:monitor
